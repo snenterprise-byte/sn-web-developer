@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SN WEB DEVELOPER | Website Designer &amp; Developer</title>
+<meta name="description" content="SN WEB DEVELOPER: independent website designer and developer. Turning ideas into beautiful digital experiences.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SN LOGO (one drawing, reused in intro, nav, about, footer). Edit the paths to change the monogram. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#b9a4ff"/><stop offset="1" stop-color="#F08ACB"/></linearGradient>
+  <symbol id="sn" viewBox="-6 -6 124 148"><g fill="none" stroke="url(#g)" stroke-width="5" stroke-linejoin="miter"><path pathLength="1" class="n" d="M14 130V12L98 126V10"/><path pathLength="1" class="s" d="M72 50H42A14 14 0 0 0 42 78H64A14 14 0 0 1 64 106H34"/></g></symbol>
+</defs></svg>
+
+<!-- INTRO: particle > lines > SN > light sweep > name. Click to skip. -->
+<div class="intro" id="intro" aria-hidden="true">
+  <svg viewBox="-6 -6 124 148" class="lg">
+    <defs><mask id="m"><g fill="none" stroke="#fff" stroke-width="5"><path pathLength="1" class="n" d="M14 130V12L98 126V10"/><path pathLength="1" class="s" d="M72 50H42A14 14 0 0 0 42 78H64A14 14 0 0 1 64 106H34"/></g></mask></defs>
+    <circle class="dot" cx="56" cy="68" r="2.5"/>
+    <circle class="ring" cx="56" cy="68" r="4"/>
+    <g fill="none" stroke="url(#g)" stroke-width="3.2" class="draw"><path pathLength="1" class="n" d="M14 130V12L98 126V10"/><path pathLength="1" class="s" d="M72 50H42A14 14 0 0 0 42 78H64A14 14 0 0 1 64 106H34"/></g>
+    <g mask="url(#m)"><rect class="sweep" x="-60" y="-10" width="30" height="150" fill="#fff"/></g>
+  </svg>
+  <p>SN WEB DEVELOPER</p>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="logo" href="#home" aria-label="SN WEB DEVELOPER home"><svg><use href="#sn"/></svg><span>SN WEB DEVELOPER</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a>
+    <a class="pill" href="#contact">Let's Work Together</a>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO: scrolling bursts the visual open (like the reference video) -->
+<section class="track" id="home">
+  <div class="stick">
+    <canvas id="burst" aria-hidden="true"></canvas>
+    <h1><span class="l l1">I DESIGN.</span><span class="l l2">I DEVELOP.</span><span class="l l3">I CREATE.</span></h1>
+    <p class="tag">Turning ideas into beautiful digital experiences.</p>
+    <p class="statement">I create modern, responsive and thoughtfully designed websites that help individuals and businesses build their digital presence.</p>
+    <div class="herobar">
+      <div class="cta"><a class="pill" href="#contact">LET'S WORK TOGETHER</a><a class="ghost" href="#work">EXPLORE MY WORK</a></div>
+      <span class="scrollcue">Scroll<i></i></span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="sec about" id="about">
+  <div class="portrait rv">
+    <!-- EDIT: to use your photo add assets/profile.jpg and uncomment: <img src="assets/profile.jpg" alt="Portrait of SN"> -->
+    <svg><use href="#sn"/></svg><small>Independent web designer</small>
+  </div>
+  <div>
+    <h2 class="split">THE PERSON BEHIND SN</h2>
+    <p class="rv">I'm an emerging independent website designer and developer. Technology fascinates me, and creative web design is where I enjoy it most.</p>
+    <p class="rv">I'm learning and practising modern web technologies every day, and I care about making each page clear, fast and pleasant to use. I want to help businesses and individuals establish an online presence they're proud of.</p>
+    <p class="rv">I'm at the start of my journey, so I'm honest about what I can build, and I put real care into every project.</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <h2 class="split">WHAT I CAN CREATE FOR YOU</h2>
+  <ul class="svcs">
+    <li class="rv"><b>01</b><div class="vis v1"></div><div><h3>Business Website Development</h3><p>A clear, professional website that explains what you do, builds trust and makes it easy for customers to reach you.</p></div><a href="#contact" data-type="Business Website">Enquire</a></li>
+    <li class="rv"><b>02</b><div class="vis v2"></div><div><h3>Personal Portfolio Websites</h3><p>A site that presents your work and personality, so people remember you and know how to contact you.</p></div><a href="#contact" data-type="Portfolio Website">Enquire</a></li>
+    <li class="rv"><b>03</b><div class="vis v3"></div><div><h3>Landing Page Design</h3><p>One focused page for a product, event or offer, built around a single action for your visitor.</p></div><a href="#contact" data-type="Landing Page">Enquire</a></li>
+    <li class="rv"><b>04</b><div class="vis v4"></div><div><h3>Website Redesign</h3><p>Refresh an outdated or confusing site with a better layout, cleaner look and easier navigation.</p></div><a href="#contact" data-type="Website Redesign">Enquire</a></li>
+    <li class="rv"><b>05</b><div class="vis v5"></div><div><h3>Responsive Website Development</h3><p>Layouts that read well and work properly on phones, tablets, laptops and large screens.</p></div><a href="#contact" data-type="Responsive Development">Enquire</a></li>
+    <li class="rv"><b>06</b><div class="vis v6"></div><div><h3>Website Maintenance</h3><p>Text and image updates, small fixes and ongoing care so your website stays current.</p></div><a href="#contact" data-type="Website Maintenance">Enquire</a></li>
+  </ul>
+</section>
+
+<!-- WORK: HTML/CSS mockups. Demonstration concepts, not client projects. -->
+<section class="sec" id="work">
+  <h2 class="split">SELECTED CREATIONS</h2>
+  <p class="note rv">Five demonstration concepts that show my style. They are not real client projects, and will be replaced with finished work.</p>
+  <div class="grid">
+    <article class="proj rv"><div class="mock m1"><i></i><div class="bar"><u></u><u></u><u></u></div><h4>Ember &amp; Oak</h4><s>Reserve a table</s><div class="dishes"><u></u><u></u><u></u></div></div><small>Demo concept · Hospitality</small><h3>Restaurant Website</h3><p>Menu, opening hours and table booking.</p></article>
+    <article class="proj rv"><div class="mock m2"><i></i><div class="bar"><u></u><u></u><u></u></div><h4>NOIR/WEAR</h4><div class="items"><u></u><u></u><u></u></div></div><small>Demo concept · Fashion</small><h3>Clothing Brand Website</h3><p>Bold product showcase and lookbook.</p></article>
+    <article class="proj rv"><div class="mock m3"><i></i><div class="bar"><u></u><u></u><u></u></div><h4>Bright Path Academy</h4><s>Join a course</s><div class="stats"><u></u><u></u><u></u></div></div><small>Demo concept · Education</small><h3>Coaching Centre Website</h3><p>Courses, teachers and enrolment details.</p></article>
+    <article class="proj rv"><div class="mock m4"><i></i><div class="bar"><u></u><u></u><u></u></div><h4>Maya Rao</h4><p>Photographer</p><div class="tiles"><u></u><u></u><u></u><u></u></div></div><small>Demo concept · Creative</small><h3>Personal Portfolio Website</h3><p>A creative's work, shown simply.</p></article>
+    <article class="proj rv"><div class="mock m5"><i></i><div class="bar"><u></u><u></u><u></u></div><h4>Grow faster with Northline</h4><s>Get a free quote</s><div class="stats"><u></u><u></u><u></u></div></div><small>Demo concept · Business</small><h3>Business Landing Page</h3><p>One page built to win enquiries.</p></article>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec" id="process">
+  <h2 class="split">FROM IDEA TO DIGITAL EXPERIENCE</h2>
+  <ol class="timeline" id="timeline">
+    <li class="rv"><b>01</b><div><h3>DISCOVER</h3><p>Understand the client's ideas and requirements.</p></div></li>
+    <li class="rv"><b>02</b><div><h3>DESIGN</h3><p>Plan the visual identity and user experience.</p></div></li>
+    <li class="rv"><b>03</b><div><h3>DEVELOP</h3><p>Build a responsive and functional website.</p></div></li>
+    <li class="rv"><b>04</b><div><h3>DELIVER</h3><p>Test the website and prepare the final handover.</p></div></li>
+  </ol>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <h2 class="split">LET'S CREATE SOMETHING GREAT.</h2>
+  <p class="rv">Have a project in mind? Tell me what you're looking to create.</p>
+  <form id="form" class="rv" novalidate>
+    <label>Full name<input name="name" required autocomplete="name"></label>
+    <label>Email address<input name="email" type="email" required autocomplete="email"></label>
+    <label>Project type<select name="type" id="type"><option>Business Website</option><option>Portfolio Website</option><option>Landing Page</option><option>Website Redesign</option><option>Responsive Development</option><option>Website Maintenance</option><option>Something else</option></select></label>
+    <label>Budget range (optional)<select name="budget"><option value="">Not sure yet</option><option>Under ₹10,000</option><option>₹10,000 – ₹25,000</option><option>₹25,000 – ₹50,000</option><option>₹50,000+</option></select></label>
+    <label class="full">Project description<textarea name="msg" rows="5" required></textarea></label>
+    <p class="err" id="err" role="alert"></p>
+    <button class="pill big pulse" type="submit">SUBMIT ENQUIRY</button>
+    <p class="hint full">This opens your email app with the enquiry ready to send. Or write to <a href="mailto:soyel4009@gmail.com">soyel4009@gmail.com</a>.</p>
+  </form>
+  <!-- OPTIONAL WhatsApp (guardian approval needed). Uncomment and add the number in international format, no + or spaces:
+  <a class="ghost" href="https://wa.me/YOURNUMBER?text=Hi%20SN%2C%20I%20need%20a%20website">Message on WhatsApp</a> -->
+</section>
+</main>
+
+<footer>
+  <div><a class="logo" href="#home"><svg><use href="#sn"/></svg><span>SN WEB DEVELOPER</span></a><p>Independent website designer and developer creating modern, responsive websites.</p></div>
+  <nav aria-label="Footer"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
+  <div><a href="mailto:soyel4009@gmail.com">soyel4009@gmail.com</a>
+   <p><!-- EDIT: add your real profile links --><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">GitHub</a></p></div>
+  <small>© <span id="year">2026</span> SN WEB DEVELOPER. All rights reserved.</small>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
